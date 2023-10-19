@@ -26,41 +26,43 @@ class TheBrothersWarSideStory3 extends StatelessWidget {
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(22),
-          child: SingleChildScrollView(
-            child: Column(
-              mainAxisSize: MainAxisSize.max,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                const Center(
-                  child: Text(
-                    'EPISODE X: TITULO',
-                    style: TextStyle(
-                      fontSize: 22,
-                      fontWeight: FontWeight.bold,
-                      color: Color.fromARGB(249, 241, 120, 120),
+          child: Scrollbar(
+            child: SingleChildScrollView(
+              child: Column(
+                mainAxisSize: MainAxisSize.max,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  const Center(
+                    child: Text(
+                      'EPISODE X: TITULO',
+                      style: TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.bold,
+                        color: Color.fromARGB(249, 241, 120, 120),
+                      ),
                     ),
                   ),
-                ),
-                const SizedBox(
-                  height: 15,
-                ),
-                const Padding(
-                  padding: EdgeInsets.symmetric(vertical: 12),
-                  child: Text(
-                    '''PARAGRAFO''',
-                    textAlign: TextAlign.justify,
-                    style: textArticle,
+                  const SizedBox(
+                    height: 15,
                   ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 8),
-                  child: Image.asset(
-                    'assets/images/kaldheim/story/content/epi1-1.jpg',
-                    fit: BoxFit.cover,
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 12),
+                    child: Text(
+                      '''PARAGRAFO''',
+                      textAlign: TextAlign.justify,
+                      style: textArticle,
+                    ),
                   ),
-                )
-              ],
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: Image.asset(
+                      'assets/images/kaldheim/story/content/epi1-1.jpg',
+                      fit: BoxFit.cover,
+                    ),
+                  )
+                ],
+              ),
             ),
           ),
         ),
