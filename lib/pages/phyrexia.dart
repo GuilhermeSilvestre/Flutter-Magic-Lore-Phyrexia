@@ -53,70 +53,81 @@ class _PhyrexiaState extends State<Phyrexia> {
                         itemBuilder: (context, index) {
                           return GestureDetector(
                             onTap: () {
-                              if ((index + 1) == 1) {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) =>
-                                        const PhyrexiaStory1(),
-                                  ),
-                                );
-                              }
-                              if ((index + 1) == 2) {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) =>
-                                        const PhyrexiaStory2(),
-                                  ),
-                                );
-                              }
-                              if ((index + 1) == 3) {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) =>
-                                        const PhyrexiaStory3(),
-                                  ),
-                                );
-                              }
-                              if ((index + 1) == 4) {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) =>
-                                        const PhyrexiaStory4(),
-                                  ),
-                                );
-                              }
-                              if ((index + 1) == 5) {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) =>
-                                        const PhyrexiaStory5(),
-                                  ),
-                                );
+                              switch (index) {
+                                case 0:
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          const PhyrexiaStory1(),
+                                    ),
+                                  );
+                                  break;
+                                case 1:
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          const PhyrexiaStory2(),
+                                    ),
+                                  );
+                                  break;
+                                case 2:
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          const PhyrexiaStory3(),
+                                    ),
+                                  );
+                                  break;
+                                case 3:
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          const PhyrexiaStory4(),
+                                    ),
+                                  );
+                                  break;
+                                case 4:
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          const PhyrexiaStory5(),
+                                    ),
+                                  );
+                                  break;
                               }
                             },
-                            child: SizedBox(
-                              height: 130,
-                              child: ListTile(
-                                visualDensity: const VisualDensity(vertical: 4),
-                                contentPadding: const EdgeInsets.all(22),
-                                leading: Image.asset(
-                                  'assets/images/phyrexia/story/capa/${index + 1}.png',
-                                  width: 120,
-                                  height: 120,
-                                  fit: BoxFit.cover,
-                                ),
-                                title: Text(
-                                  'Episode ${index + 1}',
-                                  style: const TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 18,
+                            child: Container(
+                              height: 200,
+                              margin: const EdgeInsets.symmetric(
+                                  vertical: 10, horizontal: 20),
+                              child: Stack(
+                                alignment: Alignment.bottomCenter,
+                                children: [
+                                  Image.asset(
+                                    'assets/images/phyrexia/story/capa/${index + 1}.png',
+                                    width: MediaQuery.of(context).size.width,
+                                    height: 200,
+                                    fit: BoxFit.cover,
                                   ),
-                                ),
+                                  Container(
+                                    width: double.infinity,
+                                    color: Colors.black.withOpacity(0.5),
+                                    padding: const EdgeInsets.all(8),
+                                    child: Text(
+                                      'Episode ${index + 1}',
+                                      style: const TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 18,
+                                      ),
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
                           );
@@ -173,25 +184,39 @@ class _PhyrexiaState extends State<Phyrexia> {
                                 );
                               }
                             },
-                            child: SizedBox(
-                              height: 130,
-                              child: ListTile(
-                                visualDensity: const VisualDensity(vertical: 4),
-                                contentPadding: const EdgeInsets.all(22),
-                                leading: Image.asset(
-                                  'assets/images/phyrexia/side_story/capa/${index + 1}.png',
-                                  width: 120,
-                                  height: 100,
-                                  fit: BoxFit.cover,
-                                ),
-                                title: Text(
-                                  'Episode  ${index + 1}',
-                                  style: const TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 18,
+                            child: Column(
+                              children: [
+                                const Divider(
+                                    height: 20, color: Colors.transparent),
+                                SizedBox(
+                                  height: 150,
+                                  child: Stack(
+                                    children: [
+                                      Positioned.fill(
+                                        child: Image.asset(
+                                          'assets/images/phyrexia/side_story/capa/${index + 1}.png',
+                                          fit: BoxFit.cover,
+                                        ),
+                                      ),
+                                      Align(
+                                        alignment: Alignment.bottomCenter,
+                                        child: Padding(
+                                          padding: const EdgeInsets.only(
+                                              bottom: 8.0),
+                                          child: Text(
+                                            'Episode ${index + 1}',
+                                            style: const TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 20,
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
                                   ),
                                 ),
-                              ),
+                              ],
                             ),
                           );
                         },

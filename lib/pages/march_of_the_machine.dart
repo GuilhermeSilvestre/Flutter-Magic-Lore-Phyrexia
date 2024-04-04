@@ -63,150 +63,162 @@ class _MarchOfTheMachineState extends State<MarchOfTheMachine> {
                         itemBuilder: (context, index) {
                           return GestureDetector(
                             onTap: () {
-                              if ((index + 1) == 1) {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) =>
-                                        const MarchPfTheMachineStory1(),
-                                  ),
-                                );
-                              }
-                              if ((index + 1) == 2) {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) =>
-                                        const MarchPfTheMachineStory2(),
-                                  ),
-                                );
-                              }
-                              if ((index + 1) == 3) {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) =>
-                                        const MarchPfTheMachineStory3(),
-                                  ),
-                                );
-                              }
-                              if ((index + 1) == 4) {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) =>
-                                        const MarchPfTheMachineStory4(),
-                                  ),
-                                );
-                              }
-                              if ((index + 1) == 5) {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) =>
-                                        const MarchPfTheMachineStory5(),
-                                  ),
-                                );
-                              }
-                              if ((index + 1) == 6) {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) =>
-                                        const MarchPfTheMachineStory6(),
-                                  ),
-                                );
-                              }
-                              if ((index + 1) == 7) {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) =>
-                                        const MarchPfTheMachineStory7(),
-                                  ),
-                                );
-                              }
-                              if ((index + 1) == 8) {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) =>
-                                        const MarchPfTheMachineStory8(),
-                                  ),
-                                );
-                              }
-                              if ((index + 1) == 9) {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) =>
-                                        const MarchPfTheMachineStory9(),
-                                  ),
-                                );
-                              }
-                              if ((index + 1) == 10) {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) =>
-                                        const MarchPfTheMachineStory10(),
-                                  ),
-                                );
-                              }
-                              if ((index + 1) == 11) {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) =>
-                                        const MarchPfTheMachineStory11(),
-                                  ),
-                                );
-                              }
-                              if ((index + 1) == 12) {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) =>
-                                        const MarchPfTheMachineStory12(),
-                                  ),
-                                );
-                              }
-                              if ((index + 1) == 13) {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) =>
-                                        const MarchPfTheMachineStory13(),
-                                  ),
-                                );
+                              switch (index) {
+                                case 0:
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          const MarchPfTheMachineStory1(),
+                                    ),
+                                  );
+                                  break;
+                                case 1:
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          const MarchPfTheMachineStory2(),
+                                    ),
+                                  );
+                                  break;
+                                case 2:
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          const MarchPfTheMachineStory3(),
+                                    ),
+                                  );
+                                  break;
+                                case 3:
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          const MarchPfTheMachineStory4(),
+                                    ),
+                                  );
+                                  break;
+                                case 4:
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          const MarchPfTheMachineStory5(),
+                                    ),
+                                  );
+                                  break;
+                                case 5:
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          const MarchPfTheMachineStory6(),
+                                    ),
+                                  );
+                                  break;
+                                case 6:
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          const MarchPfTheMachineStory7(),
+                                    ),
+                                  );
+                                  break;
+                                case 7:
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          const MarchPfTheMachineStory8(),
+                                    ),
+                                  );
+                                  break;
+                                case 8:
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          const MarchPfTheMachineStory9(),
+                                    ),
+                                  );
+                                  break;
+                                case 9:
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          const MarchPfTheMachineStory10(),
+                                    ),
+                                  );
+                                  break;
+                                case 10:
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          const MarchPfTheMachineStory11(),
+                                    ),
+                                  );
+                                  break;
+                                case 11:
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          const MarchPfTheMachineStory12(),
+                                    ),
+                                  );
+                                  break;
+                                case 12:
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          const MarchPfTheMachineStory13(),
+                                    ),
+                                  );
+                                  break;
                               }
                             },
-                            child: SizedBox(
-                              height: 130,
-                              child: ListTile(
-                                visualDensity: const VisualDensity(vertical: 4),
-                                contentPadding: const EdgeInsets.all(22),
-                                leading: Image.asset(
-                                  'assets/images/march_of_the_machine/story/capa/${index + 1}.png',
-                                  width: 120,
-                                  height: 120,
-                                  fit: BoxFit.cover,
-                                ),
-                                title: (index + 1 >= 12)
-                                    ? Text(
-                                        'Episode ${index + 1} - Aftermath',
-                                        style: const TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 18,
-                                        ),
-                                      )
-                                    : Text(
-                                        'Episode ${index + 1}',
-                                        style: const TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 18,
-                                        ),
-                                      ),
+                            child: Container(
+                              height: 200,
+                              margin: const EdgeInsets.symmetric(
+                                  vertical: 10, horizontal: 20),
+                              child: Stack(
+                                alignment: Alignment.bottomCenter,
+                                children: [
+                                  Image.asset(
+                                    'assets/images/march_of_the_machine/story/capa/${index + 1}.png',
+                                    width: MediaQuery.of(context).size.width,
+                                    height: 200,
+                                    fit: BoxFit.cover,
+                                  ),
+                                  Container(
+                                    width: double.infinity,
+                                    color: Colors.black.withOpacity(0.5),
+                                    padding: const EdgeInsets.all(8),
+                                    child: (index + 1 >= 12)
+                                        ? Text(
+                                            'Episode ${index + 1} - Aftermath',
+                                            style: const TextStyle(
+                                              color: Colors.white,
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 18,
+                                            ),
+                                          )
+                                        : Text(
+                                            'Episode ${index + 1}',
+                                            style: const TextStyle(
+                                              color: Colors.white,
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 18,
+                                            ),
+                                          ),
+                                  ),
+                                ],
                               ),
                             ),
                           );
@@ -281,25 +293,39 @@ class _MarchOfTheMachineState extends State<MarchOfTheMachine> {
                                 );
                               }
                             },
-                            child: SizedBox(
-                              height: 130,
-                              child: ListTile(
-                                visualDensity: const VisualDensity(vertical: 4),
-                                contentPadding: const EdgeInsets.all(22),
-                                leading: Image.asset(
-                                  'assets/images/march_of_the_machine/side_story/capa/${index + 1}.png',
-                                  width: 120,
-                                  height: 100,
-                                  fit: BoxFit.cover,
-                                ),
-                                title: Text(
-                                  'Episode  ${index + 1}',
-                                  style: const TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 18,
+                            child: Column(
+                              children: [
+                                const Divider(
+                                    height: 20, color: Colors.transparent),
+                                SizedBox(
+                                  height: 150,
+                                  child: Stack(
+                                    children: [
+                                      Positioned.fill(
+                                        child: Image.asset(
+                                          'assets/images/march_of_the_machine/side_story/capa/${index + 1}.png',
+                                          fit: BoxFit.cover,
+                                        ),
+                                      ),
+                                      Align(
+                                        alignment: Alignment.bottomCenter,
+                                        child: Padding(
+                                          padding: const EdgeInsets.only(
+                                              bottom: 8.0),
+                                          child: Text(
+                                            'Episode ${index + 1}',
+                                            style: const TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 20,
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
                                   ),
                                 ),
-                              ),
+                              ],
                             ),
                           );
                         },
