@@ -344,7 +344,7 @@ class _MarchOfTheMachineState extends State<MarchOfTheMachine> {
                             'assets/volumes_images_capas/10.png',
                             height: 280,
                             width: 230,
-                            fit: BoxFit.fill,
+                            fit: BoxFit.contain,
                           ),
                         ),
                       ),
@@ -355,14 +355,14 @@ class _MarchOfTheMachineState extends State<MarchOfTheMachine> {
                     const Text(
                       'Main Story',
                       style: TextStyle(
-                        fontSize: 22,
+                        fontSize: 28,
                         fontWeight: FontWeight.w800,
                         fontFamily: 'Planewalker',
                       ),
                       textAlign: TextAlign.center,
                     ),
                     const SizedBox(
-                      height: 25,
+                      height: 60,
                     ),
                     InkWell(
                       onTap: () {
@@ -376,10 +376,10 @@ class _MarchOfTheMachineState extends State<MarchOfTheMachine> {
                       child: Padding(
                         padding: const EdgeInsets.all(10.0),
                         child: ClipRRect(
-                          borderRadius: BorderRadius.circular(70),
+                          borderRadius: BorderRadius.circular(20),
                           child: Image.asset(
                             'assets/images/march_of_the_machine/side_story/capa/1.png',
-                            height: 230,
+                            height: 200,
                             width: 230,
                             fit: BoxFit.fitWidth,
                           ),

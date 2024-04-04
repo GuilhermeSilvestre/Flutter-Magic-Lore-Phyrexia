@@ -236,7 +236,7 @@ class _StrixhavenState extends State<Strixhaven> {
                             'assets/volumes_images_capas/2.png',
                             height: 280,
                             width: 230,
-                            fit: BoxFit.fill,
+                            fit: BoxFit.contain,
                           ),
                         ),
                       ),
@@ -247,14 +247,14 @@ class _StrixhavenState extends State<Strixhaven> {
                     const Text(
                       'Main Story',
                       style: TextStyle(
-                        fontSize: 22,
+                        fontSize: 28,
                         fontWeight: FontWeight.w800,
                         fontFamily: 'Planewalker',
                       ),
                       textAlign: TextAlign.center,
                     ),
                     const SizedBox(
-                      height: 25,
+                      height: 60,
                     ),
                     InkWell(
                       onTap: () {
@@ -268,10 +268,10 @@ class _StrixhavenState extends State<Strixhaven> {
                       child: Padding(
                         padding: const EdgeInsets.all(10.0),
                         child: ClipRRect(
-                          borderRadius: BorderRadius.circular(70),
+                          borderRadius: BorderRadius.circular(20),
                           child: Image.asset(
                             'assets/images/strixhaven/side_story/capa/1.png',
-                            height: 230,
+                            height: 200,
                             width: 230,
                             fit: BoxFit.fitWidth,
                           ),

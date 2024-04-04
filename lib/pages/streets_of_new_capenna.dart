@@ -243,7 +243,7 @@ class _Streetsofnewcapenna extends State<Streetsofnewcapenna> {
                             'assets/volumes_images_capas/6.png',
                             height: 280,
                             width: 230,
-                            fit: BoxFit.fill,
+                            fit: BoxFit.contain,
                           ),
                         ),
                       ),
@@ -254,14 +254,14 @@ class _Streetsofnewcapenna extends State<Streetsofnewcapenna> {
                     const Text(
                       'Main Story',
                       style: TextStyle(
-                        fontSize: 22,
+                        fontSize: 28,
                         fontWeight: FontWeight.w800,
                         fontFamily: 'Planewalker',
                       ),
                       textAlign: TextAlign.center,
                     ),
                     const SizedBox(
-                      height: 25,
+                      height: 60,
                     ),
                     InkWell(
                       onTap: () {
@@ -275,10 +275,10 @@ class _Streetsofnewcapenna extends State<Streetsofnewcapenna> {
                       child: Padding(
                         padding: const EdgeInsets.all(10.0),
                         child: ClipRRect(
-                          borderRadius: BorderRadius.circular(70),
+                          borderRadius: BorderRadius.circular(20),
                           child: Image.asset(
                             'assets/images/streets_of_new_capenna/side_story/capa/1.png',
-                            height: 230,
+                            height: 200,
                             width: 230,
                             fit: BoxFit.fitWidth,
                           ),
