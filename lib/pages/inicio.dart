@@ -23,8 +23,9 @@ class _InicioState extends State<Inicio> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(44, 25, 25, 25),
+        scrolledUnderElevation: 0,
         centerTitle: true,
         title: const Text(
           'MAGIC: THE GATHERING',

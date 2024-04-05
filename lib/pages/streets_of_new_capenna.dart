@@ -36,6 +36,7 @@ class _Streetsofnewcapenna extends State<Streetsofnewcapenna> {
     return hasChosen
         ? Scaffold(
             appBar: AppBar(
+              scrolledUnderElevation: 0,
               title: const Text(
                 'Streets of new Capenna',
                 style: TextStyle(
@@ -44,8 +45,6 @@ class _Streetsofnewcapenna extends State<Streetsofnewcapenna> {
                 ),
               ),
               centerTitle: true,
-              backgroundColor:
-                  const Color.fromARGB(255, 51, 48, 47).withOpacity(0.3),
             ),
             body: SafeArea(
               child: Padding(
@@ -115,7 +114,7 @@ class _Streetsofnewcapenna extends State<Streetsofnewcapenna> {
                                     'assets/images/streets_of_new_capenna/story/capa/${index + 1}.png',
                                     width: MediaQuery.of(context).size.width,
                                     height: 200,
-                                    fit: BoxFit.cover,
+                                    fit: BoxFit.fill,
                                   ),
                                   Container(
                                     width: double.infinity,
@@ -238,6 +237,7 @@ class _Streetsofnewcapenna extends State<Streetsofnewcapenna> {
           )
         : Scaffold(
             appBar: AppBar(
+              scrolledUnderElevation: 0,
               title: const Text(
                 'Streets of new Capenna',
                 style: TextStyle(
@@ -247,87 +247,87 @@ class _Streetsofnewcapenna extends State<Streetsofnewcapenna> {
               ),
               centerTitle: true,
             ),
-            body: SafeArea(
-              child: Padding(
-                padding: const EdgeInsets.all(18),
-                child: Column(
-                  mainAxisSize: MainAxisSize.max,
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    InkWell(
-                      onTap: () {
-                        setState(() {
-                          hasChosen = true;
-                          isMainStory = true;
-                          isSideStory = false;
-                        });
-
-                        //
-                      },
-                      child: Padding(
-                        padding: const EdgeInsets.all(10.0),
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(28),
-                          child: Image.asset(
-                            'assets/volumes_images_capas/6.png',
-                            height: 280,
-                            width: 230,
-                            fit: BoxFit.contain,
+            body: SingleChildScrollView(
+              child: SafeArea(
+                child: Padding(
+                  padding: const EdgeInsets.all(18),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.max,
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      InkWell(
+                        onTap: () {
+                          setState(() {
+                            hasChosen = true;
+                            isMainStory = true;
+                            isSideStory = false;
+                          });
+                        },
+                        child: Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(28),
+                            child: AspectRatio(
+                              aspectRatio: 230 / 280,
+                              child: Image.asset(
+                                'assets/volumes_images_capas/6.png',
+                                fit: BoxFit.cover,
+                              ),
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                    const SizedBox(
-                      height: 10,
-                    ),
-                    const Text(
-                      'Main Story',
-                      style: TextStyle(
-                        fontSize: 28,
-                        fontWeight: FontWeight.w800,
-                        fontFamily: 'Planewalker',
+                      const SizedBox(
+                        height: 10,
                       ),
-                      textAlign: TextAlign.center,
-                    ),
-                    const SizedBox(
-                      height: 60,
-                    ),
-                    InkWell(
-                      onTap: () {
-                        setState(() {
-                          hasChosen = true;
-                          isMainStory = false;
-                          isSideStory = true;
-                        });
-                        //
-                      },
-                      child: Padding(
-                        padding: const EdgeInsets.all(10.0),
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(20),
-                          child: Image.asset(
-                            'assets/images/streets_of_new_capenna/side_story/capa/1.png',
-                            height: 200,
-                            width: 230,
-                            fit: BoxFit.fitWidth,
+                      const Text(
+                        'Main Story',
+                        style: TextStyle(
+                          fontSize: 28,
+                          fontWeight: FontWeight.w800,
+                          fontFamily: 'Planewalker',
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                      const SizedBox(
+                        height: 30,
+                      ),
+                      InkWell(
+                        onTap: () {
+                          setState(() {
+                            hasChosen = true;
+                            isMainStory = false;
+                            isSideStory = true;
+                          });
+                        },
+                        child: Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(20),
+                            child: AspectRatio(
+                              aspectRatio: (230 / 200) * 2,
+                              child: Image.asset(
+                                'assets/images/streets_of_new_capenna/side_story/capa/1.png',
+                                fit: BoxFit.cover,
+                              ),
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                    const SizedBox(
-                      height: 10,
-                    ),
-                    const Text(
-                      'Side Story',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 22,
-                        fontWeight: FontWeight.w800,
-                        fontFamily: 'Planewalker',
+                      const SizedBox(
+                        height: 10,
                       ),
-                    ),
-                  ],
+                      const Text(
+                        'Side Story',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.w800,
+                          fontFamily: 'Planewalker',
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),

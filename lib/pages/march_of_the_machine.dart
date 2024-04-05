@@ -45,6 +45,7 @@ class _MarchOfTheMachineState extends State<MarchOfTheMachine> {
     return hasChosen
         ? Scaffold(
             appBar: AppBar(
+              scrolledUnderElevation: 0,
               title: const Text(
                 'March Of The Machine',
                 style: TextStyle(
@@ -194,7 +195,7 @@ class _MarchOfTheMachineState extends State<MarchOfTheMachine> {
                                     'assets/images/march_of_the_machine/story/capa/${index + 1}.png',
                                     width: MediaQuery.of(context).size.width,
                                     height: 200,
-                                    fit: BoxFit.cover,
+                                    fit: BoxFit.fill,
                                   ),
                                   Container(
                                     width: double.infinity,
@@ -335,6 +336,7 @@ class _MarchOfTheMachineState extends State<MarchOfTheMachine> {
           )
         : Scaffold(
             appBar: AppBar(
+              scrolledUnderElevation: 0,
               title: const Text(
                 'March Of The Machine',
                 style: TextStyle(
@@ -344,87 +346,87 @@ class _MarchOfTheMachineState extends State<MarchOfTheMachine> {
               ),
               centerTitle: true,
             ),
-            body: SafeArea(
-              child: Padding(
-                padding: const EdgeInsets.all(18),
-                child: Column(
-                  mainAxisSize: MainAxisSize.max,
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    InkWell(
-                      onTap: () {
-                        setState(() {
-                          hasChosen = true;
-                          isMainStory = true;
-                          isSideStory = false;
-                        });
-
-                        //
-                      },
-                      child: Padding(
-                        padding: const EdgeInsets.all(10.0),
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(28),
-                          child: Image.asset(
-                            'assets/volumes_images_capas/10.png',
-                            height: 280,
-                            width: 230,
-                            fit: BoxFit.contain,
+            body: SingleChildScrollView(
+              child: SafeArea(
+                child: Padding(
+                  padding: const EdgeInsets.all(18),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.max,
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      InkWell(
+                        onTap: () {
+                          setState(() {
+                            hasChosen = true;
+                            isMainStory = true;
+                            isSideStory = false;
+                          });
+                        },
+                        child: Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(28),
+                            child: AspectRatio(
+                              aspectRatio: 230 / 280,
+                              child: Image.asset(
+                                'assets/volumes_images_capas/10.png',
+                                fit: BoxFit.cover,
+                              ),
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                    const SizedBox(
-                      height: 10,
-                    ),
-                    const Text(
-                      'Main Story',
-                      style: TextStyle(
-                        fontSize: 28,
-                        fontWeight: FontWeight.w800,
-                        fontFamily: 'Planewalker',
+                      const SizedBox(
+                        height: 10,
                       ),
-                      textAlign: TextAlign.center,
-                    ),
-                    const SizedBox(
-                      height: 60,
-                    ),
-                    InkWell(
-                      onTap: () {
-                        setState(() {
-                          hasChosen = true;
-                          isMainStory = false;
-                          isSideStory = true;
-                        });
-                        //
-                      },
-                      child: Padding(
-                        padding: const EdgeInsets.all(10.0),
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(20),
-                          child: Image.asset(
-                            'assets/images/march_of_the_machine/side_story/capa/1.png',
-                            height: 200,
-                            width: 230,
-                            fit: BoxFit.fitWidth,
+                      const Text(
+                        'Main Story',
+                        style: TextStyle(
+                          fontSize: 28,
+                          fontWeight: FontWeight.w800,
+                          fontFamily: 'Planewalker',
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                      const SizedBox(
+                        height: 30,
+                      ),
+                      InkWell(
+                        onTap: () {
+                          setState(() {
+                            hasChosen = true;
+                            isMainStory = false;
+                            isSideStory = true;
+                          });
+                        },
+                        child: Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(20),
+                            child: AspectRatio(
+                              aspectRatio: (230 / 200) * 2,
+                              child: Image.asset(
+                                'assets/images/march_of_the_machine/side_story/capa/1.png',
+                                fit: BoxFit.cover,
+                              ),
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                    const SizedBox(
-                      height: 10,
-                    ),
-                    const Text(
-                      'Side Story',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 22,
-                        fontWeight: FontWeight.w800,
-                        fontFamily: 'Planewalker',
+                      const SizedBox(
+                        height: 10,
                       ),
-                    ),
-                  ],
+                      const Text(
+                        'Side Story',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.w800,
+                          fontFamily: 'Planewalker',
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
