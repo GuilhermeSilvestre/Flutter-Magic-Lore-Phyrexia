@@ -36,6 +36,14 @@ class _Inistrad1State extends State<Innistrad1> {
         ? Scaffold(
             appBar: AppBar(
               scrolledUnderElevation: 0,
+              leading: IconButton(
+                icon: const Icon(Icons.arrow_back),
+                onPressed: () {
+                  setState(() {
+                    hasChosen = false;
+                  });
+                },
+              ),
               title: const Text(
                 'Innistrad: Midnight Hunt',
                 style: TextStyle(

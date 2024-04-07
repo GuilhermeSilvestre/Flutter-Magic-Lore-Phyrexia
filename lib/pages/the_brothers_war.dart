@@ -36,6 +36,14 @@ class _TheBrothersWarState extends State<TheBrothersWar> {
         ? Scaffold(
             appBar: AppBar(
               scrolledUnderElevation: 0,
+              leading: IconButton(
+                icon: const Icon(Icons.arrow_back),
+                onPressed: () {
+                  setState(() {
+                    hasChosen = false;
+                  });
+                },
+              ),
               title: const Text(
                 'The Brothers\' War',
                 style: TextStyle(

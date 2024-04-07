@@ -35,6 +35,14 @@ class _Inistrad2State extends State<Innistrad2> {
         ? Scaffold(
             appBar: AppBar(
               scrolledUnderElevation: 0,
+              leading: IconButton(
+                icon: const Icon(Icons.arrow_back),
+                onPressed: () {
+                  setState(() {
+                    hasChosen = false;
+                  });
+                },
+              ),
               title: const Text(
                 'Innistrad: Crismon Vow',
                 style: TextStyle(

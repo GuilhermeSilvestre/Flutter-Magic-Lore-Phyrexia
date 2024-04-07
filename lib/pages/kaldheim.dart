@@ -36,6 +36,14 @@ class _KaldheimState extends State<Kaldheim> {
         ? Scaffold(
             appBar: AppBar(
               scrolledUnderElevation: 0,
+              leading: IconButton(
+                icon: const Icon(Icons.arrow_back),
+                onPressed: () {
+                  setState(() {
+                    hasChosen = false;
+                  });
+                },
+              ),
               title: const Text(
                 'Kaldheim',
                 style: TextStyle(
