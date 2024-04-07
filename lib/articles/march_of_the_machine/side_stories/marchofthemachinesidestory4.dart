@@ -95,7 +95,7 @@ But the figures strode, rather than shambling, and as she watched, one of them d
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     child: Image.asset(
-                      'assets/images/march_of_the_machine/side_story/content/epi4-1.png',
+                      'assets/images/march_of_the_machine/side_story/content/epi4-1.jpg',
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -188,7 +188,7 @@ Let's see Geralf top that.
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     child: Image.asset(
-                      'assets/images/march_of_the_machine/side_story/content/epi4-2.png',
+                      'assets/images/march_of_the_machine/side_story/content/epi4-2.jpg',
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -283,7 +283,7 @@ Geralf didn't bother to reply before setting his skaabs to recovering the bodies
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     child: Image.asset(
-                      'assets/images/march_of_the_machine/side_story/content/epi4-3.png',
+                      'assets/images/march_of_the_machine/side_story/content/epi4-3.jpg',
                       fit: BoxFit.cover,
                     ),
                   ),

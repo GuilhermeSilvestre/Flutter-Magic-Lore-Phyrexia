@@ -169,7 +169,7 @@ Chevill barked a swear. Vivien readied another shot, but already the thing was s
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     child: Image.asset(
-                      'assets/images/march_of_the_machine/side_story/content/epi2-1.png',
+                      'assets/images/march_of_the_machine/side_story/content/epi2-1.jpg',
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -238,7 +238,7 @@ Haldan followed her gaze. "Yes. I don't understand it either, in truth. Those ne
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     child: Image.asset(
-                      'assets/images/march_of_the_machine/side_story/content/epi2-2.png',
+                      'assets/images/march_of_the_machine/side_story/content/epi2-2.jpg',
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -337,7 +337,7 @@ She unslung her bow with a shake of her arm and nocked an arrow, pulling it back
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     child: Image.asset(
-                      'assets/images/march_of_the_machine/side_story/content/epi2-3.png',
+                      'assets/images/march_of_the_machine/side_story/content/epi2-3.jpg',
                       fit: BoxFit.cover,
                     ),
                   ),

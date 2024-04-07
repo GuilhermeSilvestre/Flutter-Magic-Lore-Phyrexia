@@ -191,7 +191,7 @@ One by one the commanders and priests rattled off their reports, relaying grim b
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     child: Image.asset(
-                      'assets/images/march_of_the_machine/side_story/content/epi3-1.png',
+                      'assets/images/march_of_the_machine/side_story/content/epi3-1.jpg',
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -344,7 +344,7 @@ Ink-black clouds belched from Etali's core, his lungs turned to engines that spa
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     child: Image.asset(
-                      'assets/images/march_of_the_machine/side_story/content/epi3-2.png',
+                      'assets/images/march_of_the_machine/side_story/content/epi3-2.jpg',
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -495,7 +495,7 @@ Another roar called Huatli's attention. She turned to look out across the city t
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     child: Image.asset(
-                      'assets/images/march_of_the_machine/side_story/content/epi3-3.png',
+                      'assets/images/march_of_the_machine/side_story/content/epi3-3.jpg',
                       fit: BoxFit.cover,
                     ),
                   ),

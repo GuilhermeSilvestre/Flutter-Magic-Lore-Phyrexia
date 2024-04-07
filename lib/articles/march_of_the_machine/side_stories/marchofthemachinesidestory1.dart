@@ -69,7 +69,7 @@ Quint flapped his ears but held his tongue. He wanted desperately to believe tha
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     child: Image.asset(
-                      'assets/images/march_of_the_machine/side_story/content/epi1-1.png',
+                      'assets/images/march_of_the_machine/side_story/content/epi1-1.jpg',
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -216,7 +216,7 @@ How much of the Biblioplex have we searched by now? Quint wondered, trying to re
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     child: Image.asset(
-                      'assets/images/march_of_the_machine/side_story/content/epi1-2.png',
+                      'assets/images/march_of_the_machine/side_story/content/epi1-2.jpg',
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -353,7 +353,7 @@ Then, with only faint hesitation, they each grabbed a petal and began reading.
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     child: Image.asset(
-                      'assets/images/march_of_the_machine/side_story/content/epi1-3.png',
+                      'assets/images/march_of_the_machine/side_story/content/epi1-3.jpg',
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -400,7 +400,7 @@ Amid the conflagration, Quint's thoughts raced to Will and Rowan. His friends, t
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     child: Image.asset(
-                      'assets/images/march_of_the_machine/side_story/content/epi1-4.png',
+                      'assets/images/march_of_the_machine/side_story/content/epi1-4.jpg',
                       fit: BoxFit.cover,
                     ),
                   ),

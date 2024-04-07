@@ -185,7 +185,7 @@ As the two passed by him, Rankle caught a glimpse of Ayara's face. He felt like 
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     child: Image.asset(
-                      'assets/images/march_of_the_machine/side_story/content/epi5-1.png',
+                      'assets/images/march_of_the_machine/side_story/content/epi5-1.jpg',
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -298,7 +298,7 @@ Seeing as how the dwarf had a big axe and a shiny ring, Rankle followed.''',
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     child: Image.asset(
-                      'assets/images/march_of_the_machine/side_story/content/epi5-2.png',
+                      'assets/images/march_of_the_machine/side_story/content/epi5-2.jpg',
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -405,7 +405,7 @@ Rankle stared at the love potion clutched in his hands. "Perhaps I was too hasty
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     child: Image.asset(
-                      'assets/images/march_of_the_machine/side_story/content/epi5-3.png',
+                      'assets/images/march_of_the_machine/side_story/content/epi5-3.jpg',
                       fit: BoxFit.cover,
                     ),
                   ),
