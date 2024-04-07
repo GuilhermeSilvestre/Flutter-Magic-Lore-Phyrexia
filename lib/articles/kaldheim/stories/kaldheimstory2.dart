@@ -14,7 +14,7 @@ class KaldheimStory2 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'AWAKEN THE TROLLS',
+          'KALDHEIM',
           style: TextStyle(
             fontSize: 26,
             fontWeight: FontWeight.w800,

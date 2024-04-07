@@ -14,7 +14,7 @@ class KaldheimStory3 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'THE SAGA OF TIBALT',
+          'KALDHEIM',
           style: TextStyle(
             fontSize: 26,
             fontWeight: FontWeight.w800,

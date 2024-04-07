@@ -14,7 +14,7 @@ class KaldheimStory5 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'BATTLE FOR KALDHEIM',
+          'KALDHEIM',
           style: TextStyle(
             fontSize: 26,
             fontWeight: FontWeight.w800,

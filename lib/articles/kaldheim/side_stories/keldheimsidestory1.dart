@@ -9,7 +9,7 @@ class KaldheimSideStory1 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'THE WIND IS BLOWING',
+          'KALDHEIM',
           //textAlign: TextAlign.center,
           style: TextStyle(
             fontSize: 26,

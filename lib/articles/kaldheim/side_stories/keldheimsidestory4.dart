@@ -9,7 +9,7 @@ class KaldheimSideStory4 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'DIRECTION. PURPOSE. HONOR. GLORY.',
+          'KALDHEIM',
           style: TextStyle(
             fontSize: 26,
             fontWeight: FontWeight.w800,
