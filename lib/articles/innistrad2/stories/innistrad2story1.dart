@@ -14,7 +14,7 @@ class Innistrad2Story1 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Titulo',
+          'INNISTRAD: CRIMSON VOW',
           style: TextStyle(
             fontSize: 26,
             fontWeight: FontWeight.w800,
@@ -35,7 +35,7 @@ class Innistrad2Story1 extends StatelessWidget {
                 children: [
                   const Center(
                     child: Text(
-                      'EPISODE X: TITULO',
+                      'EPISODE 1: TITHES AND INVITATIONS',
                       style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
