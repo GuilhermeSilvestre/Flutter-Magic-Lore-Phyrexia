@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:magic_lore/theme_provider.dart';
+import 'package:provider/provider.dart';
 
 class Settings extends StatefulWidget {
   const Settings({Key? key}) : super(key: key);
@@ -8,10 +10,10 @@ class Settings extends StatefulWidget {
 }
 
 class _SettingsState extends State<Settings> {
-  bool _darkModeEnabled = false;
-
   @override
   Widget build(BuildContext context) {
+    bool darkModeEnabled = context.watch<ThemeProvider>().darkmode;
+
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
@@ -42,11 +44,10 @@ class _SettingsState extends State<Settings> {
                       ),
                     ),
                     Switch(
-                      value: _darkModeEnabled,
+                      value: darkModeEnabled,
                       onChanged: (value) {
                         setState(() {
-                          _darkModeEnabled = value;
-                          // Usar Provider ou SharedPreferences posteriormente para alterar para darkmode
+                          context.read<ThemeProvider>().changeTheme();
                         });
                       },
                     ),
