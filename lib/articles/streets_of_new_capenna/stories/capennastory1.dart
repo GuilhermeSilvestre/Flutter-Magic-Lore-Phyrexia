@@ -169,7 +169,7 @@ class CapennaStory1 extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     child: Image.asset(
-                      'assets/images/streets_of_new_capenna/story/content/epi1-9.jpg',
+                      'assets/images/streets_of_new_capenna/story/content/epi1-9.png',
                       fit: BoxFit.cover,
                     ),
                   ),
