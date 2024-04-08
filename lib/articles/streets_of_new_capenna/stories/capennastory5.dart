@@ -14,7 +14,7 @@ class CapennaStory5 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Titulo',
+          'STREETS OF NEW CAPENNA',
           style: TextStyle(
             fontSize: 26,
             fontWeight: FontWeight.w800,
@@ -35,7 +35,7 @@ class CapennaStory5 extends StatelessWidget {
                 children: [
                   const Center(
                     child: Text(
-                      'EPISODE X: TITULO',
+                      'EPISODE 5: HYMN OF THE ANGELS',
                       style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
@@ -57,10 +57,129 @@ class CapennaStory5 extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     child: Image.asset(
-                      'assets/images/kaldheim/story/content/epi1-1.jpg',
+                      'assets/images/streets_of_new_capenna/story/content/epi5-1.jpg',
                       fit: BoxFit.cover,
                     ),
-                  )
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 12),
+                    child: Text(
+                      '''PARAGRAFO''',
+                      textAlign: TextAlign.justify,
+                      style: textArticle,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: Image.asset(
+                      'assets/images/streets_of_new_capenna/story/content/epi5-2.jpg',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 12),
+                    child: Text(
+                      '''PARAGRAFO''',
+                      textAlign: TextAlign.justify,
+                      style: textArticle,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: Image.asset(
+                      'assets/images/streets_of_new_capenna/story/content/epi5-3.jpg',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 12),
+                    child: Text(
+                      '''PARAGRAFO''',
+                      textAlign: TextAlign.justify,
+                      style: textArticle,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: Image.asset(
+                      'assets/images/streets_of_new_capenna/story/content/epi5-4.jpg',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 12),
+                    child: Text(
+                      '''PARAGRAFO''',
+                      textAlign: TextAlign.justify,
+                      style: textArticle,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: Image.asset(
+                      'assets/images/streets_of_new_capenna/story/content/epi5-5.jpg',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 12),
+                    child: Text(
+                      '''PARAGRAFO''',
+                      textAlign: TextAlign.justify,
+                      style: textArticle,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: Image.asset(
+                      'assets/images/streets_of_new_capenna/story/content/epi5-6.jpg',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 12),
+                    child: Text(
+                      '''PARAGRAFO''',
+                      textAlign: TextAlign.justify,
+                      style: textArticle,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: Image.asset(
+                      'assets/images/streets_of_new_capenna/story/content/epi5-7.jpg',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 12),
+                    child: Text(
+                      '''PARAGRAFO''',
+                      textAlign: TextAlign.justify,
+                      style: textArticle,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: Image.asset(
+                      'assets/images/streets_of_new_capenna/story/content/epi5-8.jpg',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: Image.asset(
+                      'assets/images/streets_of_new_capenna/story/content/epi5-9.jpg',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: Image.asset(
+                      'assets/images/streets_of_new_capenna/story/content/epi5-10.jpg',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
                 ],
               ),
             ),

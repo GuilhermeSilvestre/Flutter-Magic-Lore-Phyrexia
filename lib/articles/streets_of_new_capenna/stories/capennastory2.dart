@@ -14,7 +14,7 @@ class CapennaStory2 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Titulo',
+          'STREETS OF NEW CAPENNA',
           style: TextStyle(
             fontSize: 26,
             fontWeight: FontWeight.w800,
@@ -35,7 +35,7 @@ class CapennaStory2 extends StatelessWidget {
                 children: [
                   const Center(
                     child: Text(
-                      'EPISODE X: TITULO',
+                      'EPISODE 2: DIRTY LAUNDRY',
                       style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
@@ -57,10 +57,77 @@ class CapennaStory2 extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     child: Image.asset(
-                      'assets/images/kaldheim/story/content/epi1-1.jpg',
+                      'assets/images/streets_of_new_capenna/story/content/epi2-1.jpg',
                       fit: BoxFit.cover,
                     ),
-                  )
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 12),
+                    child: Text(
+                      '''PARAGRAFO''',
+                      textAlign: TextAlign.justify,
+                      style: textArticle,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: Image.asset(
+                      'assets/images/streets_of_new_capenna/story/content/epi2-2.jpg',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 12),
+                    child: Text(
+                      '''PARAGRAFO''',
+                      textAlign: TextAlign.justify,
+                      style: textArticle,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: Image.asset(
+                      'assets/images/streets_of_new_capenna/story/content/epi2-3.jpg',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 12),
+                    child: Text(
+                      '''PARAGRAFO''',
+                      textAlign: TextAlign.justify,
+                      style: textArticle,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: Image.asset(
+                      'assets/images/streets_of_new_capenna/story/content/epi2-4.jpg',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 12),
+                    child: Text(
+                      '''PARAGRAFO''',
+                      textAlign: TextAlign.justify,
+                      style: textArticle,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: Image.asset(
+                      'assets/images/streets_of_new_capenna/story/content/epi2-5.jpg',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: Image.asset(
+                      'assets/images/streets_of_new_capenna/story/content/epi2-6.jpg',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
                 ],
               ),
             ),

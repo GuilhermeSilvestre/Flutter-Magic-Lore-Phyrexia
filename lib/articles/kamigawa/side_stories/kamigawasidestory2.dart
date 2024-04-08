@@ -9,7 +9,7 @@ class KamigawaSideStory2 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Titulo',
+          'KAMIGAWA',
           style: TextStyle(
             fontSize: 26,
             fontWeight: FontWeight.w800,
@@ -30,7 +30,7 @@ class KamigawaSideStory2 extends StatelessWidget {
                 children: [
                   const Center(
                     child: Text(
-                      'EPISODE X: TITULO',
+                      'THE BLADE REFLECTED AND REBORN',
                       style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
@@ -52,10 +52,78 @@ class KamigawaSideStory2 extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     child: Image.asset(
-                      'assets/images/kaldheim/story/content/epi1-1.jpg',
+                      'assets/images/kamigawa/side_story/content/epi2-1.jpg',
                       fit: BoxFit.cover,
                     ),
-                  )
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 12),
+                    child: Text(
+                      '''PARAGRAFO''',
+                      textAlign: TextAlign.justify,
+                      style: textArticle,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: Image.asset(
+                      'assets/images/kamigawa/side_story/content/epi2-2.jpg',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 12),
+                    child: Text(
+                      '''PARAGRAFO''',
+                      textAlign: TextAlign.justify,
+                      style: textArticle,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: Image.asset(
+                      'assets/images/kamigawa/side_story/content/epi2-3.jpg',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 12),
+                    child: Text(
+                      '''PARAGRAFO''',
+                      textAlign: TextAlign.justify,
+                      style: textArticle,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: Image.asset(
+                      'assets/images/kamigawa/side_story/content/epi2-4.jpg',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 12),
+                    child: Text(
+                      '''PARAGRAFO''',
+                      textAlign: TextAlign.justify,
+                      style: textArticle,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: Image.asset(
+                      'assets/images/kamigawa/side_story/content/epi2-5.jpg',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 12),
+                    child: Text(
+                      '''PARAGRAFO''',
+                      textAlign: TextAlign.justify,
+                      style: textArticle,
+                    ),
+                  ),
                 ],
               ),
             ),
