@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:magic_lore/pages/about.dart';
 import 'package:magic_lore/pages/dominaria_united.dart';
 import 'package:magic_lore/pages/innistrad1.dart';
 import 'package:magic_lore/pages/innistrad2.dart';
@@ -6,6 +7,7 @@ import 'package:magic_lore/pages/kaldheim.dart';
 import 'package:magic_lore/pages/kamigawa.dart';
 import 'package:magic_lore/pages/march_of_the_machine.dart';
 import 'package:magic_lore/pages/phyrexia.dart';
+import 'package:magic_lore/pages/settings.dart';
 import 'package:magic_lore/pages/streets_of_new_capenna.dart';
 import 'package:magic_lore/pages/strixhaven.dart';
 import 'package:magic_lore/pages/the_brothers_war.dart';
@@ -34,6 +36,83 @@ class _InicioState extends State<Inicio> {
             fontWeight: FontWeight.w800,
           ),
         ),
+        actions: [
+          PopupMenuButton<String>(
+            shadowColor: const Color.fromARGB(255, 66, 53, 15),
+            surfaceTintColor: const Color.fromARGB(255, 137, 178, 212),
+            onSelected: (value) {
+              if (value == 'settings') {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Settings(),
+                  ),
+                );
+              }
+              if (value == 'about') {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const About(),
+                  ),
+                );
+              }
+              if (value == 'close') {
+                //Apenas fecha
+              }
+            },
+            itemBuilder: (BuildContext context) => <PopupMenuEntry<String>>[
+              PopupMenuItem<String>(
+                value: 'settings',
+                child: Container(
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                  width: 160,
+                  child: const Text(
+                    'Settings',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Color.fromARGB(255, 44, 39, 39),
+                    ),
+                  ),
+                ),
+              ),
+              PopupMenuItem<String>(
+                value: 'about',
+                child: Container(
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                  width: 160,
+                  child: const Text(
+                    'About',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Color.fromARGB(255, 44, 39, 39),
+                    ),
+                  ),
+                ),
+              ),
+              PopupMenuItem<String>(
+                value: 'close',
+                child: Container(
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                  width: 160,
+                  child: const Text(
+                    'Close',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Color.fromARGB(255, 44, 39, 39),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ],
       ),
       body: SafeArea(
         child: Padding(
