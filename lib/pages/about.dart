@@ -119,6 +119,10 @@ class About extends StatelessWidget {
                     ),
                   ),
                 ),
+                const SizedBox(
+                  height: 20,
+                ),
+                Image.asset('assets/volumes_images_capas/eleshnorn.jpg'),
               ],
             ),
           ),

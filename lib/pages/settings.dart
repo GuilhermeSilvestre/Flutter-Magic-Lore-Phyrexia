@@ -52,6 +52,10 @@ class _SettingsState extends State<Settings> {
                     ),
                   ],
                 ),
+                const SizedBox(
+                  height: 20,
+                ),
+                Image.asset('assets/volumes_images_capas/jingitaxias.jpg'),
               ],
             ),
           ),
