@@ -104,7 +104,7 @@ class _InicioState extends State<Inicio> {
                     'Close',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 16,
                       color: Color.fromARGB(255, 44, 39, 39),
                     ),
                   ),

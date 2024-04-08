@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
 
-class Settings extends StatelessWidget {
+class Settings extends StatefulWidget {
   const Settings({Key? key}) : super(key: key);
+
+  @override
+  _SettingsState createState() => _SettingsState();
+}
+
+class _SettingsState extends State<Settings> {
+  bool _darkModeEnabled = false;
 
   @override
   Widget build(BuildContext context) {
@@ -18,15 +25,32 @@ class Settings extends StatelessWidget {
           ),
         ),
       ),
-      body: const SafeArea(
+      body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.all(8),
+          padding: const EdgeInsets.all(18),
           child: SizedBox(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Text(
-                  'data',
-                  textAlign: TextAlign.center,
+                Row(
+                  children: [
+                    const Text(
+                      'Dark Mode ',
+                      style: TextStyle(
+                        fontSize: 18,
+                      ),
+                    ),
+                    Switch(
+                      value: _darkModeEnabled,
+                      onChanged: (value) {
+                        setState(() {
+                          _darkModeEnabled = value;
+                          // Usar Provider ou SharedPreferences posteriormente para alterar para darkmode
+                        });
+                      },
+                    ),
+                  ],
                 ),
               ],
             ),
