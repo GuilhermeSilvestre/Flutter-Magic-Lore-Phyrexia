@@ -295,12 +295,15 @@ class _Streetsofnewcapenna extends State<Streetsofnewcapenna> {
                       const SizedBox(
                         height: 10,
                       ),
-                      const Text(
+                      Text(
                         'Main Story',
                         style: TextStyle(
                           fontSize: 28,
                           fontWeight: FontWeight.w800,
                           fontFamily: 'Planewalker',
+                          color: darkModeEnabled
+                              ? const Color.fromARGB(234, 116, 114, 114)
+                              : Colors.black,
                         ),
                         textAlign: TextAlign.center,
                       ),
@@ -332,13 +335,16 @@ class _Streetsofnewcapenna extends State<Streetsofnewcapenna> {
                       const SizedBox(
                         height: 10,
                       ),
-                      const Text(
+                      Text(
                         'Side Story',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.w800,
                           fontFamily: 'Planewalker',
+                          color: darkModeEnabled
+                              ? const Color.fromARGB(234, 116, 114, 114)
+                              : Colors.black,
                         ),
                       ),
                     ],
