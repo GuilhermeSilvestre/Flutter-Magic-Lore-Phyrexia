@@ -14,7 +14,7 @@ class DominariaSideStory1 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Titulo',
+          'DOMINARIA UNITED',
           style: TextStyle(
             fontSize: 26,
             fontWeight: FontWeight.w800,
@@ -35,7 +35,7 @@ class DominariaSideStory1 extends StatelessWidget {
                 children: [
                   const Center(
                     child: Text(
-                      'EPISODE X: TITULO',
+                      'HOMECOMING',
                       style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,

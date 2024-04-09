@@ -14,7 +14,7 @@ class TheBrothersWarSideStory5 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Titulo',
+          'THE BROTHERS\' WAR',
           style: TextStyle(
             fontSize: 26,
             fontWeight: FontWeight.w800,
@@ -35,7 +35,7 @@ class TheBrothersWarSideStory5 extends StatelessWidget {
                 children: [
                   const Center(
                     child: Text(
-                      'EPISODE X: TITULO',
+                      'THE BROTHERS\' WAR | CHAPTER 5: EXODUS',
                       style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
