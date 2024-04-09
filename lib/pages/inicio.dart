@@ -127,13 +127,16 @@ class _InicioState extends State<Inicio> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             mainAxisSize: MainAxisSize.max,
             children: [
-              const Text(
+              Text(
                 'THE PHYREXIAN ARC',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.w800,
                   fontFamily: 'Planewalker',
+                  color: darkModeEnabled
+                      ? const Color.fromARGB(234, 116, 114, 114)
+                      : Colors.black,
                   //fontStyle: FontStyle.italic,
                 ),
               ),
@@ -268,9 +271,12 @@ class _InicioState extends State<Inicio> {
                               }
                             })(),
                             textAlign: TextAlign.center,
-                            style: const TextStyle(
+                            style: TextStyle(
                               fontSize: 15,
                               fontWeight: FontWeight.w800,
+                              color: darkModeEnabled
+                                  ? const Color.fromARGB(234, 116, 114, 114)
+                                  : Colors.black,
                             ),
                           ),
                         ],

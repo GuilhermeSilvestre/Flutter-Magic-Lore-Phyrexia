@@ -42,8 +42,8 @@ class About extends StatelessWidget {
               children: [
                 RichText(
                   textAlign: TextAlign.justify,
-                  text: const TextSpan(
-                    style: TextStyle(
+                  text: TextSpan(
+                    style: const TextStyle(
                       fontSize: 16.0,
                       color: Colors.black,
                     ),
@@ -51,8 +51,13 @@ class About extends StatelessWidget {
                       TextSpan(
                         text:
                             'This app aims to help those who would like to know more about the lore of the game ',
+                        style: TextStyle(
+                          color: darkModeEnabled
+                              ? const Color.fromARGB(234, 116, 114, 114)
+                              : Colors.black,
+                        ),
                       ),
-                      TextSpan(
+                      const TextSpan(
                         text: 'Magic: The Gathering',
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -62,8 +67,13 @@ class About extends StatelessWidget {
                       TextSpan(
                         text:
                             ' or enthusiasts who already know it but want quick access to some of the stories from this universe.\n\nThere are 10 story arcs from ',
+                        style: TextStyle(
+                          color: darkModeEnabled
+                              ? const Color.fromARGB(234, 116, 114, 114)
+                              : Colors.black,
+                        ),
                       ),
-                      TextSpan(
+                      const TextSpan(
                         text: 'Kaldheim',
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -72,8 +82,13 @@ class About extends StatelessWidget {
                       ),
                       TextSpan(
                         text: ' to the end of New Phyrexia in ',
+                        style: TextStyle(
+                          color: darkModeEnabled
+                              ? const Color.fromARGB(234, 116, 114, 114)
+                              : Colors.black,
+                        ),
                       ),
-                      TextSpan(
+                      const TextSpan(
                         text: 'March of the Machine',
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -83,6 +98,12 @@ class About extends StatelessWidget {
                       TextSpan(
                         text:
                             ' that you can read even if you have no internet connection.',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: darkModeEnabled
+                              ? const Color.fromARGB(234, 116, 114, 114)
+                              : Colors.black,
+                        ),
                       ),
                     ],
                   ),
@@ -90,21 +111,27 @@ class About extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                const Text(
+                Text(
                   'I hope you have enjoyed it!.',
                   style: TextStyle(
                     fontSize: 16.0,
                     fontWeight: FontWeight.bold,
+                    color: darkModeEnabled
+                        ? const Color.fromARGB(234, 116, 114, 114)
+                        : Colors.black,
                   ),
                 ),
                 const SizedBox(
                   height: 20,
                 ),
-                const Text(
+                Text(
                   'You can find more stories of Magic unverse here:',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 14.0,
+                    color: darkModeEnabled
+                        ? const Color.fromARGB(234, 116, 114, 114)
+                        : Colors.black,
                   ),
                 ),
                 const SizedBox(
