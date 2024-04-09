@@ -63,10 +63,63 @@ class TheBrothersWarStory1 extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     child: Image.asset(
-                      'assets/images/kaldheim/story/content/epi1-1.jpg',
+                      'assets/images/the_brothers_war/story/content/epi1-1.jpg',
                       fit: BoxFit.cover,
                     ),
-                  )
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 12),
+                    child: Text(
+                      '''PARAGRAFO''',
+                      textAlign: TextAlign.justify,
+                      style: textArticle,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: Image.asset(
+                      'assets/images/the_brothers_war/story/content/epi1-2.jpg',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 12),
+                    child: Text(
+                      '''PARAGRAFO''',
+                      textAlign: TextAlign.justify,
+                      style: textArticle,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: Image.asset(
+                      'assets/images/the_brothers_war/story/content/epi1-3.jpg',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 12),
+                    child: Text(
+                      '''PARAGRAFO''',
+                      textAlign: TextAlign.justify,
+                      style: textArticle,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: Image.asset(
+                      'assets/images/the_brothers_war/story/content/epi1-4.jpg',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 12),
+                    child: Text(
+                      '''PARAGRAFO''',
+                      textAlign: TextAlign.justify,
+                      style: textArticle,
+                    ),
+                  ),
                 ],
               ),
             ),
