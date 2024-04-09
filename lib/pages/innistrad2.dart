@@ -8,6 +8,8 @@ import 'package:magic_lore/articles/innistrad2/stories/innistrad2story2.dart';
 import 'package:magic_lore/articles/innistrad2/stories/innistrad2story3.dart';
 import 'package:magic_lore/articles/innistrad2/stories/innistrad2story4.dart';
 import 'package:magic_lore/articles/innistrad2/stories/innistrad2story5.dart';
+import 'package:magic_lore/theme_provider.dart';
+import 'package:provider/provider.dart';
 
 class Innistrad2 extends StatefulWidget {
   const Innistrad2({Key? key}) : super(key: key);
@@ -31,9 +33,12 @@ class _Inistrad2State extends State<Innistrad2> {
 
   @override
   Widget build(BuildContext context) {
+    bool darkModeEnabled = context.watch<ThemeProvider>().darkmode;
     return hasChosen
         ? Scaffold(
+            backgroundColor: darkModeEnabled ? Colors.black54 : Colors.white,
             appBar: AppBar(
+              backgroundColor: darkModeEnabled ? Colors.grey : Colors.white,
               scrolledUnderElevation: 0,
               leading: IconButton(
                 icon: const Icon(Icons.arrow_back),
@@ -224,7 +229,9 @@ class _Inistrad2State extends State<Innistrad2> {
             ),
           )
         : Scaffold(
+            backgroundColor: darkModeEnabled ? Colors.black54 : Colors.white,
             appBar: AppBar(
+              backgroundColor: darkModeEnabled ? Colors.grey : Colors.white,
               scrolledUnderElevation: 0,
               title: const Text(
                 'Innistrad: Crismon Vow',

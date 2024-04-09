@@ -11,6 +11,8 @@ import 'package:magic_lore/pages/settings.dart';
 import 'package:magic_lore/pages/streets_of_new_capenna.dart';
 import 'package:magic_lore/pages/strixhaven.dart';
 import 'package:magic_lore/pages/the_brothers_war.dart';
+import 'package:magic_lore/theme_provider.dart';
+import 'package:provider/provider.dart';
 
 class Inicio extends StatefulWidget {
   const Inicio({Key? key}) : super(key: key);
@@ -24,9 +26,12 @@ class _InicioState extends State<Inicio> {
 
   @override
   Widget build(BuildContext context) {
+    bool darkModeEnabled = context.watch<ThemeProvider>().darkmode;
+
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: darkModeEnabled ? Colors.black54 : Colors.white,
       appBar: AppBar(
+        backgroundColor: darkModeEnabled ? Colors.grey : Colors.white,
         scrolledUnderElevation: 0,
         centerTitle: true,
         title: const Text(

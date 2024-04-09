@@ -8,6 +8,8 @@ import 'package:magic_lore/articles/kamigawa/stories/kamigawastory2.dart';
 import 'package:magic_lore/articles/kamigawa/stories/kamigawastory3.dart';
 import 'package:magic_lore/articles/kamigawa/stories/kamigawastory4.dart';
 import 'package:magic_lore/articles/kamigawa/stories/kamigawastory5.dart';
+import 'package:magic_lore/theme_provider.dart';
+import 'package:provider/provider.dart';
 
 class Kamigawa extends StatefulWidget {
   const Kamigawa({Key? key}) : super(key: key);
@@ -31,9 +33,12 @@ class _KamigawaState extends State<Kamigawa> {
 
   @override
   Widget build(BuildContext context) {
+    bool darkModeEnabled = context.watch<ThemeProvider>().darkmode;
     return hasChosen
         ? Scaffold(
+            backgroundColor: darkModeEnabled ? Colors.black54 : Colors.white,
             appBar: AppBar(
+              backgroundColor: darkModeEnabled ? Colors.grey : Colors.white,
               scrolledUnderElevation: 0,
               leading: IconButton(
                 icon: const Icon(Icons.arrow_back),
@@ -224,7 +229,9 @@ class _KamigawaState extends State<Kamigawa> {
             ),
           )
         : Scaffold(
+            backgroundColor: darkModeEnabled ? Colors.black54 : Colors.white,
             appBar: AppBar(
+              backgroundColor: darkModeEnabled ? Colors.grey : Colors.white,
               scrolledUnderElevation: 0,
               title: const Text(
                 'Kamigawa: Neon Dynasty',

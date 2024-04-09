@@ -10,6 +10,8 @@ import 'package:magic_lore/articles/streets_of_new_capenna/stories/capennastory2
 import 'package:magic_lore/articles/streets_of_new_capenna/stories/capennastory3.dart';
 import 'package:magic_lore/articles/streets_of_new_capenna/stories/capennastory4.dart';
 import 'package:magic_lore/articles/streets_of_new_capenna/stories/capennastory5.dart';
+import 'package:magic_lore/theme_provider.dart';
+import 'package:provider/provider.dart';
 
 class Streetsofnewcapenna extends StatefulWidget {
   const Streetsofnewcapenna({Key? key}) : super(key: key);
@@ -33,9 +35,12 @@ class _Streetsofnewcapenna extends State<Streetsofnewcapenna> {
 
   @override
   Widget build(BuildContext context) {
+    bool darkModeEnabled = context.watch<ThemeProvider>().darkmode;
     return hasChosen
         ? Scaffold(
+            backgroundColor: darkModeEnabled ? Colors.black54 : Colors.white,
             appBar: AppBar(
+              backgroundColor: darkModeEnabled ? Colors.grey : Colors.white,
               scrolledUnderElevation: 0,
               leading: IconButton(
                 icon: const Icon(Icons.arrow_back),
@@ -244,7 +249,9 @@ class _Streetsofnewcapenna extends State<Streetsofnewcapenna> {
             ),
           )
         : Scaffold(
+            backgroundColor: darkModeEnabled ? Colors.black54 : Colors.white,
             appBar: AppBar(
+              backgroundColor: darkModeEnabled ? Colors.grey : Colors.white,
               scrolledUnderElevation: 0,
               title: const Text(
                 'Streets of new Capenna',

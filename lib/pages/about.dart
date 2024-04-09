@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:magic_lore/theme_provider.dart';
+import 'package:provider/provider.dart';
 
 class About extends StatelessWidget {
   const About({Key? key}) : super(key: key);
@@ -15,9 +17,11 @@ class About extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    bool darkModeEnabled = context.watch<ThemeProvider>().darkmode;
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: darkModeEnabled ? Colors.black54 : Colors.white,
       appBar: AppBar(
+        backgroundColor: darkModeEnabled ? Colors.grey : Colors.white,
         scrolledUnderElevation: 0,
         centerTitle: true,
         title: const Text(

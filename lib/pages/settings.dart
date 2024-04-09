@@ -15,8 +15,9 @@ class _SettingsState extends State<Settings> {
     bool darkModeEnabled = context.watch<ThemeProvider>().darkmode;
 
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: darkModeEnabled ? Colors.black54 : Colors.white,
       appBar: AppBar(
+        backgroundColor: darkModeEnabled ? Colors.grey : Colors.white,
         scrolledUnderElevation: 0,
         centerTitle: true,
         title: const Text(
@@ -41,6 +42,7 @@ class _SettingsState extends State<Settings> {
                       'Dark Mode ',
                       style: TextStyle(
                         fontSize: 18,
+                        color: Color.fromARGB(255, 240, 176, 37),
                       ),
                     ),
                     Switch(

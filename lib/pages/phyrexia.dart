@@ -9,6 +9,8 @@ import 'package:magic_lore/articles/phyrexia/stories/phyrexiastory2.dart';
 import 'package:magic_lore/articles/phyrexia/stories/phyrexiastory3.dart';
 import 'package:magic_lore/articles/phyrexia/stories/phyrexiastory4.dart';
 import 'package:magic_lore/articles/phyrexia/stories/phyrexiastory5.dart';
+import 'package:magic_lore/theme_provider.dart';
+import 'package:provider/provider.dart';
 
 class Phyrexia extends StatefulWidget {
   const Phyrexia({Key? key}) : super(key: key);
@@ -32,9 +34,12 @@ class _PhyrexiaState extends State<Phyrexia> {
 
   @override
   Widget build(BuildContext context) {
+    bool darkModeEnabled = context.watch<ThemeProvider>().darkmode;
     return hasChosen
         ? Scaffold(
+            backgroundColor: darkModeEnabled ? Colors.black54 : Colors.white,
             appBar: AppBar(
+              backgroundColor: darkModeEnabled ? Colors.grey : Colors.white,
               scrolledUnderElevation: 0,
               leading: IconButton(
                 icon: const Icon(Icons.arrow_back),
@@ -234,7 +239,9 @@ class _PhyrexiaState extends State<Phyrexia> {
             ),
           )
         : Scaffold(
+            backgroundColor: darkModeEnabled ? Colors.black54 : Colors.white,
             appBar: AppBar(
+              backgroundColor: darkModeEnabled ? Colors.grey : Colors.white,
               scrolledUnderElevation: 0,
               title: const Text(
                 'Phyrexia: All Will Be One',

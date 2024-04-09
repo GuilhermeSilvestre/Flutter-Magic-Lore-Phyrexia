@@ -19,6 +19,8 @@ import 'package:magic_lore/articles/march_of_the_machine/stories/marchofthemachi
 import 'package:magic_lore/articles/march_of_the_machine/stories/marchofthemachinestory7.dart';
 import 'package:magic_lore/articles/march_of_the_machine/stories/marchofthemachinestory8.dart';
 import 'package:magic_lore/articles/march_of_the_machine/stories/marchofthemachinestory9.dart';
+import 'package:magic_lore/theme_provider.dart';
+import 'package:provider/provider.dart';
 
 class MarchOfTheMachine extends StatefulWidget {
   const MarchOfTheMachine({Key? key}) : super(key: key);
@@ -42,9 +44,12 @@ class _MarchOfTheMachineState extends State<MarchOfTheMachine> {
 
   @override
   Widget build(BuildContext context) {
+    bool darkModeEnabled = context.watch<ThemeProvider>().darkmode;
     return hasChosen
         ? Scaffold(
+            backgroundColor: darkModeEnabled ? Colors.black54 : Colors.white,
             appBar: AppBar(
+              backgroundColor: darkModeEnabled ? Colors.grey : Colors.white,
               scrolledUnderElevation: 0,
               leading: IconButton(
                 icon: const Icon(Icons.arrow_back),
@@ -343,7 +348,9 @@ class _MarchOfTheMachineState extends State<MarchOfTheMachine> {
             ),
           )
         : Scaffold(
+            backgroundColor: darkModeEnabled ? Colors.black54 : Colors.white,
             appBar: AppBar(
+              backgroundColor: darkModeEnabled ? Colors.grey : Colors.white,
               scrolledUnderElevation: 0,
               title: const Text(
                 'March Of The Machine',

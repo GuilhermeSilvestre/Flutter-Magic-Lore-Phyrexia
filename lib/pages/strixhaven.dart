@@ -9,6 +9,8 @@ import 'package:magic_lore/articles/strixhaven/stories/strixhavenstory2.dart';
 import 'package:magic_lore/articles/strixhaven/stories/strixhavenstory3.dart';
 import 'package:magic_lore/articles/strixhaven/stories/strixhavenstory4.dart';
 import 'package:magic_lore/articles/strixhaven/stories/strixhavenstory5.dart';
+import 'package:magic_lore/theme_provider.dart';
+import 'package:provider/provider.dart';
 
 class Strixhaven extends StatefulWidget {
   const Strixhaven({Key? key}) : super(key: key);
@@ -32,9 +34,12 @@ class _StrixhavenState extends State<Strixhaven> {
 
   @override
   Widget build(BuildContext context) {
+    bool darkModeEnabled = context.watch<ThemeProvider>().darkmode;
     return hasChosen
         ? Scaffold(
+            backgroundColor: darkModeEnabled ? Colors.black54 : Colors.white,
             appBar: AppBar(
+              backgroundColor: darkModeEnabled ? Colors.grey : Colors.white,
               scrolledUnderElevation: 0,
               leading: IconButton(
                 icon: const Icon(Icons.arrow_back),
@@ -234,7 +239,9 @@ class _StrixhavenState extends State<Strixhaven> {
             ),
           )
         : Scaffold(
+            backgroundColor: darkModeEnabled ? Colors.black54 : Colors.white,
             appBar: AppBar(
+              backgroundColor: darkModeEnabled ? Colors.grey : Colors.white,
               scrolledUnderElevation: 0,
               title: const Text(
                 'Strixhaven',

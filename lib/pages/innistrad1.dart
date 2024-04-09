@@ -9,6 +9,8 @@ import 'package:magic_lore/articles/innistrad1/stories/innistradstory2.dart';
 import 'package:magic_lore/articles/innistrad1/stories/innistradstory3.dart';
 import 'package:magic_lore/articles/innistrad1/stories/innistradstory4.dart';
 import 'package:magic_lore/articles/innistrad1/stories/innistradstory5.dart';
+import 'package:magic_lore/theme_provider.dart';
+import 'package:provider/provider.dart';
 
 class Innistrad1 extends StatefulWidget {
   const Innistrad1({Key? key}) : super(key: key);
@@ -32,9 +34,12 @@ class _Inistrad1State extends State<Innistrad1> {
 
   @override
   Widget build(BuildContext context) {
+    bool darkModeEnabled = context.watch<ThemeProvider>().darkmode;
     return hasChosen
         ? Scaffold(
+            backgroundColor: darkModeEnabled ? Colors.black54 : Colors.white,
             appBar: AppBar(
+              backgroundColor: darkModeEnabled ? Colors.grey : Colors.white,
               scrolledUnderElevation: 0,
               leading: IconButton(
                 icon: const Icon(Icons.arrow_back),
@@ -234,7 +239,9 @@ class _Inistrad1State extends State<Innistrad1> {
             ),
           )
         : Scaffold(
+            backgroundColor: darkModeEnabled ? Colors.black54 : Colors.white,
             appBar: AppBar(
+              backgroundColor: darkModeEnabled ? Colors.grey : Colors.white,
               scrolledUnderElevation: 0,
               title: const Text(
                 'Innistrad: Midnight Hunt',
