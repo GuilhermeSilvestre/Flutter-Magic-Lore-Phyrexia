@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:magic_lore/theme_provider.dart';
+import 'package:provider/provider.dart';
 
 const textArticle = TextStyle(
   fontSize: 18,
@@ -11,8 +13,12 @@ class MarchPfTheMachineSideStory6 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    bool darkModeEnabled = context.watch<ThemeProvider>().darkmode;
+
     return Scaffold(
+      backgroundColor: darkModeEnabled ? Colors.black : Colors.white,
       appBar: AppBar(
+        backgroundColor: darkModeEnabled ? Colors.grey : Colors.white,
         title: const Text(
           'MARCH OF THE MACHINE',
           style: TextStyle(
@@ -90,7 +96,7 @@ I sit side-saddle on a great branch of the greatest tree, a gleaming limb of the
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     child: Image.asset(
-                      'assets/images/march_of_the_machine/side_story/content/epi6-1.png',
+                      'assets/images/march_of_the_machine/side_story/content/epi6-1.jpg',
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -205,7 +211,7 @@ Fortunately, a cohort of Selesnyan warriors tear through a hole in the maze—ho
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     child: Image.asset(
-                      'assets/images/march_of_the_machine/side_story/content/epi6-2.png',
+                      'assets/images/march_of_the_machine/side_story/content/epi6-2.jpg',
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -298,7 +304,7 @@ To our right, where the south wall used to be, the city is in shambles. The Inva
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     child: Image.asset(
-                      'assets/images/march_of_the_machine/side_story/content/epi6-3.png',
+                      'assets/images/march_of_the_machine/side_story/content/epi6-3.jpg',
                       fit: BoxFit.cover,
                     ),
                   ),

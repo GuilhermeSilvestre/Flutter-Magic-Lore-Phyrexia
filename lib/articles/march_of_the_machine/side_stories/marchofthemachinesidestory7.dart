@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:magic_lore/theme_provider.dart';
+import 'package:provider/provider.dart';
 
 const textArticle = TextStyle(
   fontSize: 18,
@@ -11,8 +13,12 @@ class MarchPfTheMachineSideStory7 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    bool darkModeEnabled = context.watch<ThemeProvider>().darkmode;
+
     return Scaffold(
+      backgroundColor: darkModeEnabled ? Colors.black : Colors.white,
       appBar: AppBar(
+        backgroundColor: darkModeEnabled ? Colors.grey : Colors.white,
         title: const Text(
           'MARCH OF THE MACHINE',
           style: TextStyle(
@@ -69,7 +75,7 @@ Rivulets of black oil dripped down their cheeks. Red sinew crept over their bodi
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     child: Image.asset(
-                      'assets/images/march_of_the_machine/side_story/content/epi7-1.png',
+                      'assets/images/march_of_the_machine/side_story/content/epi7-1.jpg',
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -218,7 +224,7 @@ It wasn't odd to encounter people she'd never met among the resistance. But Erra
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     child: Image.asset(
-                      'assets/images/march_of_the_machine/side_story/content/epi7-2.png',
+                      'assets/images/march_of_the_machine/side_story/content/epi7-2.jpg',
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -391,7 +397,7 @@ Halo-paint went everywhere. The beasts scattered, roaring in pain. Errant hadn't
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     child: Image.asset(
-                      'assets/images/march_of_the_machine/side_story/content/epi7-3.png',
+                      'assets/images/march_of_the_machine/side_story/content/epi7-3.jpg',
                       fit: BoxFit.cover,
                     ),
                   ),

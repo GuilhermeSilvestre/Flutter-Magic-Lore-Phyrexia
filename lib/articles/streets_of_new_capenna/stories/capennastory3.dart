@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:magic_lore/theme_provider.dart';
+import 'package:provider/provider.dart';
 
 const textArticle = TextStyle(
   fontSize: 18,
@@ -11,8 +13,12 @@ class CapennaStory3 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    bool darkModeEnabled = context.watch<ThemeProvider>().darkmode;
+
     return Scaffold(
+      backgroundColor: darkModeEnabled ? Colors.black : Colors.white,
       appBar: AppBar(
+        backgroundColor: darkModeEnabled ? Colors.grey : Colors.white,
         title: const Text(
           'STREETS OF NEW CAPENNA',
           style: TextStyle(

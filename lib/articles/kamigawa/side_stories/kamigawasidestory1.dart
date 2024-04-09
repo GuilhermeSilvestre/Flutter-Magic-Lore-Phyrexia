@@ -1,13 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:magic_lore/articleModel.dart';
+import 'package:magic_lore/theme_provider.dart';
+import 'package:provider/provider.dart';
 
 class KamigawaSideStory1 extends StatelessWidget {
   const KamigawaSideStory1({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    bool darkModeEnabled = context.watch<ThemeProvider>().darkmode;
+
     return Scaffold(
+      backgroundColor: darkModeEnabled ? Colors.black : Colors.white,
       appBar: AppBar(
+        backgroundColor: darkModeEnabled ? Colors.grey : Colors.white,
         title: const Text(
           'KAMIGAWA',
           style: TextStyle(
