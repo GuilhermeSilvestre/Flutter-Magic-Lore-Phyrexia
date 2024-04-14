@@ -1,4 +1,4 @@
-package com.example.magic_lore
+package com.gsilvestre.magic_lore
 
 import io.flutter.embedding.android.FlutterActivity
 
